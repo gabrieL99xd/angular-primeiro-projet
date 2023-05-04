@@ -1,0 +1,15 @@
+
+.menu_bar_container > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu_bar_container > ul > li{
+    margin: 0px 15px;
+}
+
+
+a:visited {
+    color: white;
+  }

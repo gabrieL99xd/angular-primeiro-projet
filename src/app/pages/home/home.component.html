@@ -1,0 +1,17 @@
+<header>
+    <app-menu-bar></app-menu-bar>
+</header>
+<app-menu-title></app-menu-title>
+<div class = "articles">
+    <div class="articles_main">
+        <app-big-card [imgSource]="'https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png'" 
+        [cardTitle]="'Nova versão do app'"
+        [description]="'Lorem ipsum!?'"
+        [Id]="1"></app-big-card>
+    </div>
+    <div class="articles_others">
+        <div *ngFor="let item of items">
+            <app-small-card [imagePath]="item.imagem" [description]="item.descricao" [Id]="item.Id" ></app-small-card>
+        </div>
+    </div>
+</div>
